@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta información -->
+    <meta charset="UTF-8">
+    <title>Test Vocacional</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/testvocacional.css" />
+    <!-- Icono de la pestaña -->
+    <link rel="shortcut icon" href="imagen/logoposterior.ico" />
+</head>
+
+<body>
+
+    <!-- Encabezado de la página con el logo -->
+    <div class="logo" id="titulo">
+        <img src="imagen/logo.png">
+    </div>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <ul class="nav">
+            <!-- Enlaces a las diferentes secciones -->
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="testvocacional.html">Test Vocacional</a></li>
+            <li><a href="articulos.html">Articulos</a></li>
+            <li><a href="testimonios.html">Testimonios</a></li>
+            <li><a href="#">Universidades</a>
+                <ul>
+                    <li><a href="#">Azua</a>
+                        <ul>
+                            <li><a href="universidades_azua1.html">Universidad Tecnológica del Sur (UTESUR)</a></li>
+                            <li><a href="universidades_azua2.html">Universidad Católica Tecnológica de Barahona (UCATEBA)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Barahona</a>
+                        <ul>
+                            <li><a href="universidades_barahona1.html">Universidad Católica Tecnológica de Barahona (UCATEBA)</a></li>
+                            <li><a href="universidades_barahona2.html">Universidad Autónoma de Santo Domingo (UASD)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Distrito Nacional (Santo Domingo)</a>
+                        <ul>
+                            <li><a href="universidades_santo_domingo1.html">Universidad Autónoma de Santo Domingo (UASD)</a></li>
+                            <li><a href="universidades_santo_domingo2.html">Pontificia Universidad Católica Madre y Maestra (PUCMM)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Duarte</a>
+                        <ul>
+                            <li><a href="universidades_duarte1.html">Universidad Católica Tecnológica del Cibao (UCATECI)</a></li>
+                            <li><a href="universidades_duarte2.html">Instituto Tecnológico de Santo Domingo (INTEC)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">El Seibo</a>
+                        <ul>
+                            <li><a href="universidades_el_seibo1.html">Universidad Central del Este (UCE)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Espaillat</a>
+                        <ul>
+                            <li><a href="universidades_espaillat1.html">Universidad Tecnológica del Cibao Oriental (UTECO)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Hato Mayor</a>
+                        <ul>
+                            <li><a href="universidades_hato_mayor1.html">Universidad Católica Tecnológica del Cibao (UCATECI)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">La Altagracia</a>
+                        <ul>
+                            <li><a href="universidades_la_altagracia1.html">Universidad Católica Tecnológica de Barahona (UCATEBA)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">La Vega</a>
+                        <ul>
+                            <li><a href="universidades_la_vega1.html">Universidad Nacional Pedro Henríquez Ureña (UNPHU)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Monseñor Nouel</a>
+                        <ul>
+                            <li><a href="universidades_monseñor_nouel1.html">Universidad Abierta para Adultos (UAPA)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Puerto Plata</a>
+                        <ul>
+                            <li><a href="universidades_puerto_plata1.html">Universidad Autónoma de Santo Domingo (UASD)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Samaná</a>
+                        <ul>
+                            <li><a href="universidades_samana1.html">Universidad Católica Tecnológica de Barahona (UCATEBA)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">San Cristóbal</a>
+                        <ul>
+                            <li><a href="universidades_san_cristobal1.html">Universidad Autónoma de Santo Domingo (UASD)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">San Juan</a>
+                        <ul>
+                            <li><a href="universidades_san_juan1.html">Universidad Católica Tecnológica de Barahona (UCATEBA)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">San Pedro de Macorís</a>
+                        <ul>
+                            <li><a href="universidades_san_pedro_de_macoris1.html">Universidad Autónoma de Santo Domingo (UASD)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <li><a href="Nosotros.html">Nosotros</a></li>
+        </ul>
+    </nav>
+
+    <!-- Espacio en blanco para separar el contenido -->
+    <br><br><br>
+
+
+    <center>
+        <h1>TEST VOCACIONAL</h1>
+    </center>
+
+    <br><br>
+
+    <div id="vocationalTest">
+        <form action="resultados.php" method="post">
+            <br><br>
+            <!-- Pregunta 1 -->
+            <p>1. ¿Qué tipo de actividades disfrutas más?</p>
+            <br>
+            <input type="radio" id="question1_a" name="question1" value="a">
+            <label for="question1_a">Trabajar en equipo</label></br>
+    
+            <input type="radio" id="question1_b" name="question1" value="b">
+            <label for="question1_b">Trabajar de manera independiente</label><br>
+    
+            <input type="radio" id="question1_c" name="question1" value="c">
+            <label for="question1_c">Interactuar con personas</label><br>
+    
+            <input type="radio" id="question1_d" name="question1" value="d">
+            <label for="question1_d">Trabajar con números y datos</label><br>
+            <br>
+    
+            <!-- Pregunta 2 -->
+            <p>2. ¿Cómo te sientes respecto a los desafíos?</p>
+            <br>
+            <input type="radio" id="question2_a" name="question2" value="a">
+            <label for="question2_a">Me emociona enfrentar nuevos desafíos</label><br>
+    
+            <input type="radio" id="question2_b" name="question2" value="b">
+            <label for="question2_b">Prefiero evitarlos si es posible</label><br>
+    
+            <input type="radio" id="question2_c" name="question2" value="c">
+            <label for="question2_c">Me gusta superarlos con esfuerzo y dedicación</label><br>
+    
+            <input type="radio" id="question2_d" name="question2" value="d">
+            <label for="question2_d">Los veo como oportunidades para aprender</label><br>
+            <br>
+    
+            <!-- Pregunta 3 -->
+            <p>3. ¿Cómo te sientes acerca de la rutina en el trabajo?</p>
+            <br>
+            <input type="radio" id="question3_a" name="question3" value="a">
+            <label for="question3_a">La rutina me hace sentir cómodo y organizado</label><br>
+    
+            <input type="radio" id="question3_b" name="question3" value="b">
+            <label for="question3_b">Me aburro con facilidad, prefiero variedad</label><br>
+    
+            <input type="radio" id="question3_c" name="question3" value="c">
+            <label for="question3_c">Disfruto de cierta rutina, pero también necesito desafíos</label><br>
+    
+            <input type="radio" id="question3_d" name="question3" value="d">
+            <label for="question3_d">No me importa la rutina siempre y cuando esté cumpliendo mis objetivos</label><br>
+            <br>
+    
+            <!-- Pregunta 4 -->
+            <p>4. ¿Prefieres trabajar en un ambiente estructurado o en uno más flexible?</p>
+            <br>
+            <input type="radio" id="question4_a" name="question4" value="a">
+            <label for="question4_a">Me siento más cómodo en un ambiente estructurado</label><br>
+    
+            <input type="radio" id="question4_b" name="question4" value="b">
+            <label for="question4_b">Prefiero un ambiente más flexible y dinámico</label><br>
+    
+            <input type="radio" id="question4_c" name="question4" value="c">
+            <label for="question4_c">Me adapto a cualquier tipo de ambiente de trabajo</label><br>
+    
+            <input type="radio" id="question4_d" name="question4" value="d">
+            <label for="question4_d">Depende de la naturaleza del trabajo</label><br>
+            <br>
+    
+            <!-- Pregunta 5 -->
+            <p>5. ¿Qué importancia le das al salario en la elección de un trabajo?</p>
+            <br>
+            <input type="radio" id="question5_a" name="question5" value="a">
+            <label for="question5_a">Es muy importante, el salario es mi principal motivación</label><br>
+    
+            <input type="radio" id="question5_b" name="question5" value="b">
+            <label for="question5_b">Es importante, pero no es lo más importante para mí</label><br>
+    
+            <input type="radio" id="question5_c" name="question5" value="c">
+            <label for="question5_c">El salario es solo uno de los aspectos a considerar</label><br>
+    
+            <input type="radio" id="question5_d" name="question5" value="d">
+            <label for="question5_d">No es la prioridad, busco otros beneficios laborales</label><br>
+            <br>
+    
+            <!-- Pregunta 6 -->
+            <p>6. ¿Te consideras una persona creativa?</p>
+            <br>
+            <input type="radio" id="question6_a" name="question6" value="a">
+            <label for="question6_a">Sí, soy muy creativo</label><br>
+    
+            <input type="radio" id="question6_b" name="question6" value="b">
+            <label for="question6_b">No, no me considero creativo</label><br>
+    
+            <input type="radio" id="question6_c" name="question6" value="c">
+            <label for="question6_c">Soy creativo en ciertas áreas</label><br>
+    
+            <input type="radio" id="question6_d" name="question6" value="d">
+            <label for="question6_d">Nunca lo he pensado realmente</label><br>
+            <br>
+    
+            <!-- Pregunta 7 -->
+            <p>7. ¿Cómo te sientes acerca de trabajar bajo presión?</p>
+            <br>
+            <input type="radio" id="question7_a" name="question7" value="a">
+            <label for="question7_a">Me motiva a dar lo mejor de mí</label><br>
+    
+            <input type="radio" id="question7_b" name="question7" value="b">
+            <label for="question7_b">Me estresa y afecta mi desempeño</label><br>
+    
+            <input type="radio" id="question7_c" name="question7" value="c">
+            <label for="question7_c">Puedo manejar la presión en la mayoría de los casos</label><br>
+    
+            <input type="radio" id="question7_d" name="question7" value="d">
+            <label for="question7_d">Depende del tipo de presión y la situación</label><br>
+            <br>
+    
+            <!-- Pregunta 8 -->
+            <p>8. ¿Qué tipo de ambiente de trabajo prefieres?</p>
+            <br>
+            <input type="radio" id="question8_a" name="question8" value="a">
+            <label for="question8_a">Un ambiente tranquilo y ordenado</label><br>
+    
+            <input type="radio" id="question8_b" name="question8" value="b">
+            <label for="question8_b">Un ambiente dinámico y en constante cambio</label><br>
+    
+            <input type="radio" id="question8_c" name="question8" value="c">
+            <label for="question8_c">Un ambiente colaborativo y amigable</label><br>
+    
+            <input type="radio" id="question8_d" name="question8" value="d">
+            <label for="question8_d">Un ambiente desafiante y competitivo</label><br>
+            <br>
+    
+            <!-- Pregunta 9 -->
+            <p>9. ¿Qué tipo de habilidades te gustaría desarrollar?</p>
+            <br>
+            <input type="radio" id="question9_a" name="question9" value="a">
+            <label for="question9_a">Habilidades de liderazgo</label><br>
+    
+            <input type="radio" id="question9_b" name="question9" value="b">
+            <label for="question9_b">Habilidades técnicas o especializadas</label><br>
+    
+            <input type="radio" id="question9_c" name="question9" value="c">
+            <label for="question9_c">Habilidades de comunicación</label><br>
+    
+            <input type="radio" id="question9_d" name="question9" value="d">
+            <label for="question9_d">Habilidades de resolución de problemas</label><br>
+            <br>
+    
+            <!-- Pregunta 10 -->
+            <p>10. ¿Qué te motiva en un trabajo?</p>
+            <br>
+            <input type="radio" id="question10_a" name="question10" value="a">
+            <label for="question10_a">La posibilidad de crecer profesionalmente</label><br>
+    
+            <input type="radio" id="question10_b" name="question10" value="b">
+            <label for="question10_b">El impacto que puedo tener en el mundo</label><br>
+    
+            <input type="radio" id="question10_c" name="question10" value="c">
+            <label for="question10_c">El reconocimiento y la valoración de mi trabajo</label><br>
+    
+            <input type="radio" id="question10_d" name="question10" value="d">
+            <label for="question10_d">El desafío intelectual y la satisfacción personal</label><br>
+            <br>
+    
+            <!-- Botón de enviar -->
+           <center><input type="submit" value="Obtener Resultados"></center>
+            <br><br><br>
+        </form>
+    </div>
+
+        <!-- Espacio en blanco para separar el contenido -->
+        <br><br><br>
+                    
+<!-- Pie de página -->
+<footer>
+    <!-- Información del Centro Educativo -->
+    <div class="pie" style="display: flex; align-items: center;">
+        <!-- Logo del Centro Educativo-->
+        <a href="https://www.instagram.com/plegu_jc/">
+            <img src="imagen/plegu.png" width="40" height="40" style="margin-right: 10px; margin-left: 10px;">
+        </a>
+        
+        <!-- Enlace al Centro Educativo -->
+        <a href="https://www.instagram.com/plegu_jc/">Politécnico Luis Ernesto Gómez Uribe</a>
+        <a href="#titulo" style="margin-left: auto;">Ir al comienzoﾠﾠ</a>
+    </div>
+    <!-- Línea de copyright -->
+    <p style="margin-left: left;">ﾠﾠﾠﾠﾠﾠﾠ© 2024 Politécnico Luis Ernesto Gómez Uribe. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+
+</html>

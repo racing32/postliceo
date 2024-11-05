@@ -1,0 +1,214 @@
+/* Establece la tipografía predeterminada para el documento */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Reset de márgenes y rellenos para todos los elementos */
+html,body,h1,h2,h3,ul,li,a,p,footer,nav {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    width: 1300px; /* Ancho máximo del cuerpo */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto;
+    background-color: #f0f0f0; /* Color de fondo */
+}
+
+/* Estilos del contenedor de la prueba vocacional */
+#vocationalTest {
+    background-color: #fff; /* Color de fondo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    border-radius: 50px;
+    transition: box-shadow 0.3s; /* Agregamos una transición para suavizar el cambio */
+}
+
+#vocationalTest:hover {
+    box-shadow: 0 0 10px black; /* Añade una sombra más pronunciada al pasar el mouse */
+}
+/* Estilos del formulario dentro del contenedor */
+#vocationalTest form {
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 25px; /* Tamaño de fuente */
+    margin-left: 5%; /* Ejemplo de ajuste de margen a la izquierda */
+}
+
+/* Estilos para el texto dentro del contenedor */
+#vocationalTest p {
+    font-weight: bold; /* Peso de la fuente */
+    font-size: 25px; /* Tamaño de fuente */
+}
+
+/* Estilos para el botón de enviar dentro del formulario */
+input[type="submit"] {
+    display: block; /* Muestra como bloque */
+    margin-top: 50px; /* Margen superior */
+    padding: 20px 25px; /* Relleno */
+    background-color: #222; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Quita el borde */
+    border-radius: 15px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+/* Estilos al pasar el cursor sobre el botón de enviar */
+input[type="submit"]:hover {
+    background-color: #57575a; /* Cambia el color de fondo */
+}
+
+#vocationalTest form center {
+    text-align: left; /* Alinea el contenido del centro hacia la izquierda */
+}
+
+/* Estilos del logotipo */
+.logo {
+    float: left; /* Logotipo flotante a la izquierda */
+    margin-top: 10px; /* Margen superior */
+    margin-left: 20px; /* Margen izquierdo */
+}
+
+/* Estilos de la imagen del logotipo */
+.logo img {
+    height: 100px; /* Altura de la imagen */
+    width: auto; /* Ancho automático */
+}
+
+/* Estilos adicionales para el logotipo */
+.logo {
+    position: sticky; /* Posición pegajosa */
+    top: 0; /* Alineación superior */
+    z-index: 101; /* Índice z para superponer */
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    position: sticky; /* Posición pegajosa */
+    top: 0; /* Alineación superior */
+    z-index: 100; /* Índice z */
+    padding: 60px; /* Relleno */
+    margin-top: 1px; /* Margen superior */
+    background-color: #ffffff; /* Color de fondo */
+    font-family: 'Montserrat', sans-serif; /* Fuente */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+/* Estilos para el menú desplegable */
+.nav li ul {
+    display: none; /* Ocultar la lista de opciones */
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 12px; /* Reducir el tamaño de la fuente */
+}
+
+.nav li:hover > ul {
+    display: block; /* Mostrar la lista de opciones cuando se pasa el mouse sobre el elemento padre */
+}
+
+.nav li ul li {
+    display: block;
+    position: relative; /* Agregar posición relativa para los elementos de la lista */
+}
+
+.nav li ul li a {
+    color: #333;
+    padding: 6px 10px; /* Reducir el relleno (padding) entre elementos */
+    display: block;
+    text-decoration: none;
+}
+
+.nav li ul li a:hover {
+    background-color: #ddd; /* Cambiar el color de fondo cuando se pasa el mouse sobre un enlace */
+}
+
+/* Estilos para el submenú de segundo nivel */
+.nav li ul li ul {
+    left: 100%; /* Mover el submenú de segundo nivel a la derecha */
+    top: 0; /* Alinear el submenú de segundo nivel con la parte superior del elemento padre */
+    display: none; /* Ocultar el submenú de segundo nivel */
+}
+
+.nav li ul li:hover > ul {
+    display: block; /* Mostrar el submenú de segundo nivel cuando se pasa el mouse sobre el elemento padre */
+}
+
+/* Estilos de la lista de elementos de navegación */
+ul {
+    float: right; /* Alineación a la derecha */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Estilos de los elementos de la lista */
+li {
+    display: inline-block; /* Elementos en línea */
+    list-style-type: none; /* Quita los marcadores */
+    background-color:white; /* Color de fondo */
+    margin: 0rem 1rem 0rem 0rem; /* Márgenes */
+    border-radius: 1.5rem; /* Bordes redondeados */
+    padding: 0.50rem 0.50rem; /* Relleno */
+    cursor: pointer; /* Cambia el cursor */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+/* Estilos al pasar el cursor sobre los elementos de la lista */
+li:hover {
+    box-shadow: 0 0.1rem 0.4rem #364552; /* Sombra al pasar el cursor */
+}
+
+/* Estilos de los enlaces */
+a {
+    color:black; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+/* Estilos al pasar el cursor sobre los enlaces */
+a:hover {
+    color:#34495E; /* Cambia el color del texto */
+}
+
+/* Estilos para el contenido principal */
+main {
+    width: 1300px; /* Ancho máximo */
+    float: left; /* Flotante a la izquierda */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos del pie de página */
+footer {
+    clear: both; /* Limpia los flotantes */
+    background-color: #222; /* Color de fondo */
+    padding: 50px 0px; /* Relleno */
+    color: white; /* Color del texto */
+    bottom: 0; /* Alinea al fondo */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos de las secciones dentro del pie de página */
+footer section {
+    float: right; /* Flotante a la derecha */
+    clear: both; /* Limpia los flotantes */
+}
+
+/* Estilos para los párrafos dentro del pie de página */
+footer p {
+    margin: 0; /* Márgenes */
+    clear: both; /* Limpia los flotantes */
+}
+
+/* Estilos de los enlaces dentro del pie de página */
+footer a {
+    transition: color 0.3s ease; /* Transición suave del color */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    clear: both; /* Limpia los flotantes */
+}
+
+/* Estilos al pasar el cursor sobre los enlaces del pie de página */
+footer a:hover {
+    color: dodgerblue; /* Cambia el color del texto */
+    clear: both; /* Limpia los flotantes */
+}
+

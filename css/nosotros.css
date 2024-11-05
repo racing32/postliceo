@@ -1,0 +1,201 @@
+
+
+/* Define que los elementos de estructura básica se muestren como bloques */
+article, aside, footer, header, main, nav, section {
+    display: block;
+}
+
+/* Configura la tipografía base del documento */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Reset de márgenes y rellenos para varios elementos */
+html,body,h1,h2,h3,ul,li,a,p,footer,nav {
+    padding: 0; /* Establece el relleno en 0 */
+    margin: 0; /* Establece el margen en 0 */
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    width: 1300px; /* Ancho máximo del cuerpo */
+    margin-left: auto; /* Centra el cuerpo horizontalmente */
+    margin-right: auto;
+    background-color: #f0f0f0; /* Color de fondo del cuerpo */
+}
+
+/* Estilos del logotipo */
+.logo {
+    float: left; /* Posición flotante a la izquierda */
+    margin-top: 10px; /* Margen superior */
+    margin-left: 20px; /* Margen izquierdo */
+}
+
+.logo img {
+    height: 100px; /* Altura de la imagen del logotipo */
+    width: auto; /* Ancho automático para mantener la proporción */
+}
+
+/* Establece el logotipo como posición pegajosa en la parte superior */
+.logo {
+    position: sticky;
+    top: 0;
+    z-index: 101; /* Capa z para que esté por encima de otros elementos */
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    position: sticky; /* Barra de navegación pegajosa en la parte superior */
+    top: 0; 
+    z-index: 100; /* Capa z para que esté por encima del contenido */
+}
+
+/* Estilos de la lista de navegación */
+nav {
+    padding: 60px; /* Espaciado dentro de la barra de navegación */
+    margin-top: 1px;
+    background-color: #ffffff; /* Color de fondo de la barra de navegación */
+    font-family: 'Montserrat', sans-serif; /* Tipografía de la barra de navegación */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+/* Estilos para el menú desplegable */
+.nav li ul {
+    display: none; /* Ocultar la lista de opciones */
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 12px; /* Reducir el tamaño de la fuente */
+}
+
+.nav li:hover > ul {
+    display: block; /* Mostrar la lista de opciones cuando se pasa el mouse sobre el elemento padre */
+}
+
+.nav li ul li {
+    display: block;
+    position: relative; /* Agregar posición relativa para los elementos de la lista */
+}
+
+.nav li ul li a {
+    padding: 6px 10px; /* Reducir el relleno (padding) entre elementos */
+    display: block;
+    text-decoration: none;
+}
+
+.nav li ul li a:hover {
+    background-color: #ddd; /* Cambiar el color de fondo cuando se pasa el mouse sobre un enlace */
+}
+
+/* Estilos para el submenú de segundo nivel */
+.nav li ul li ul {
+    left: 100%; /* Mover el submenú de segundo nivel a la derecha */
+    top: 0; /* Alinear el submenú de segundo nivel con la parte superior del elemento padre */
+    display: none; /* Ocultar el submenú de segundo nivel */
+}
+
+.nav li ul li:hover > ul {
+    display: block; /* Mostrar el submenú de segundo nivel cuando se pasa el mouse sobre el elemento padre */
+}
+
+
+/* Estilos de la lista desordenada */
+ul {
+    float: right; /* Alineación de la lista a la derecha */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Estilos de los elementos de la lista */
+li {
+    display: inline-block; /* Elementos de la lista en línea */
+    list-style-type: none; /* Quita los marcadores de lista */
+    background-color:white; /* Color de fondo */
+    margin: 0rem 1rem 0rem 0rem; /* Márgenes */
+    border-radius: 1.5rem; /* Bordes redondeados */
+    padding: 0.50rem 0.50rem; /* Relleno */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: color 0.3s ease; /* Transición de color suave */
+}
+
+/* Estilos al pasar el cursor sobre los elementos de la lista */
+li:hover {
+    box-shadow: 0 0.1rem 0.4rem #364552; /* Sombra al pasar el cursor */
+}
+
+/* Estilos de los enlaces */
+a {
+  color:black; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado predeterminado */
+}
+
+/* Estilos al pasar el cursor sobre los enlaces */
+a:hover {
+  color:#34495E; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilos del pie de página */
+footer {
+    clear: both; /* Borra los flotadores */
+    background-color: #222; /* Color de fondo */
+    padding: 50px 0px; /* Relleno */
+    color: white; /* Color del texto */
+    bottom: 0; /* Ancla en la parte inferior */
+    width: 100%; /* Ancho total */
+}
+
+/* Estilos de la sección del pie de página */
+footer section {
+    float: right; /* Alineación a la derecha */
+    clear: both; /* Borra los flotadores */
+}
+
+/* Estilos para los párrafos dentro del pie de página */
+footer p {
+    margin: 0; /* Margen */
+    clear: both; /* Borra los flotadores */
+}
+
+/* Estilos para los enlaces dentro del pie de página */
+footer a {
+    transition: color 0.3s ease; /* Transición suave */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+    clear: both; /* Borra los flotadores */
+}
+
+/* Estilos al pasar el cursor sobre los enlaces del pie de página */
+footer a:hover {
+    color: dodgerblue; /* Cambia el color al pasar el cursor */
+    clear: both; /* Borra los flotadores */
+}
+
+/* Estilos para los enlaces dentro de los párrafos */
+p a {
+    color: blue; /* Color del texto */
+}
+
+/* Comentario: Se han agregado estilos para los enlaces dentro de los párrafos */
+
+.creditos {
+    text-align: center;
+}
+
+/* Para centrar un bloque */
+.creditos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.creditos li {
+    margin-bottom: 20px; /* Ajusta este valor según tus necesidades */
+}
+
+.Ascesores {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}

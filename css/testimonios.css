@@ -1,0 +1,300 @@
+@charset "UTF-8";
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+display: block;
+}
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,body,h1,h2,h3,ul,li,a,p,article,aside,footer,header,main,nav,section {
+    padding: 0;
+    margin: 0;
+    }
+
+body {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    float: left;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+
+.logo img {
+    height: 120px;
+    width: auto;
+}
+.logo {
+    position: sticky;
+    top: 0;
+    z-index: 101;
+}
+
+nav {
+    position: sticky;
+    top: 0; 
+    z-index: 100;
+}
+
+nav {
+    padding: 60px;
+    margin-top: 1px;
+    background-color: #ffffff; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/* Estilos para el menú desplegable */
+.nav li ul {
+    display: none; /* Ocultar la lista de opciones */
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 12px; /* Reducir el tamaño de la fuente */
+}
+
+.nav li:hover > ul {
+    display: block; /* Mostrar la lista de opciones cuando se pasa el mouse sobre el elemento padre */
+}
+
+.nav li ul li {
+    display: block;
+    position: relative; /* Agregar posición relativa para los elementos de la lista */
+}
+
+.nav li ul li a {
+    color: #333;
+    padding: 6px 10px; /* Reducir el relleno (padding) entre elementos */
+    display: block;
+    text-decoration: none;
+}
+
+.nav li ul li a:hover {
+    background-color: #ddd; /* Cambiar el color de fondo cuando se pasa el mouse sobre un enlace */
+}
+
+/* Estilos para el submenú de segundo nivel */
+.nav li ul li ul {
+    left: 100%; /* Mover el submenú de segundo nivel a la derecha */
+    top: 0; /* Alinear el submenú de segundo nivel con la parte superior del elemento padre */
+    display: none; /* Ocultar el submenú de segundo nivel */
+}
+
+.nav li ul li:hover > ul {
+    display: block; /* Mostrar el submenú de segundo nivel cuando se pasa el mouse sobre el elemento padre */
+}
+
+
+ul {
+    float: right;
+    border-radius: 15px;
+}
+
+li{
+    display: inline-block;
+    list-style-type: none;
+    background-color:white;
+    margin: 0rem 1rem 0rem 0rem;
+    border-radius: 1.5rem;  
+    padding: 0.50rem 0.50rem;
+    cursor: pointer;
+    transition: color 0.3s ease;    
+}
+
+li:hover{
+    box-shadow: 0 0.1rem 0.4rem #364552;
+}
+
+a{
+  color:black;
+  text-decoration: none;
+}
+
+a:hover{
+  color:#34495E
+}
+
+.container {
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 800px; 
+}
+
+.post {
+    display: flex; 
+    align-items: center;
+}
+.post h2,
+.post p {
+    flex: 1; 
+    text-align: center;
+}
+.post img {
+    margin-left: auto; 
+    border-radius: 1.5rem;
+}
+
+section button {
+    transition: box-shadow 0.3s ease;
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 1.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+section button h2, section button p {
+    margin: 1rem;
+}
+
+section button:hover {
+    box-shadow: 0 0.1rem 0.4rem #364552;
+}
+
+text {
+    text-align: justify;
+}
+
+main{
+    width: 1300px;
+    float: left;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+
+
+/* Testimonios */
+.testimonio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinea los testimonios al inicio */
+}
+
+.testimonio {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: calc(60% - 50px); /* Reducir el ancho para dejar más espacio entre testimonios */
+    margin: 40px; /* Aumentar el margen para dejar más espacio entre testimonios */
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.testimonio:nth-child(odd) {
+    align-self: flex-start;
+    margin-left: auto;
+}
+
+.testimonio:nth-child(even) {
+    align-self: flex-end;
+    margin-right: auto;
+}
+
+.testimonio-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonio-foto {
+    width: 65px;
+    height: px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.testimonio-nombre, .testimonio-cargo {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.testimonio-texto {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.testimonio.vacio {
+    border: 2px dashed #000;
+    text-align: center;
+}
+
+.testimonio.vacio .testimonio-nombre,
+.testimonio.vacio .testimonio-texto {
+    color: #999;
+}
+.testimonio:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.testimonio-final{
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: calc(50% - 30px); /* Reducir el ancho para dejar más espacio entre testimonios */
+    margin: 40px; /* Aumentar el margen para dejar más espacio entre testimonios */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.testimonio-final:hover {
+    box-shadow: 0pc 0px 10px rgba(0,0,0,0.5);
+}
+
+/*pie de pagina o footer*/
+footer {
+    clear: both;
+    background-color: #222;
+    padding: 50px 0px;
+    color: white; 
+    bottom: 0;  
+    width: 100%;
+}
+
+footer section {
+ float: right;
+ clear: both;
+ 
+}
+
+footer p {
+    margin: 0;
+    clear: both;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    clear: both;
+}
+
+footer a:hover {
+    color: dodgerblue;
+    clear: both;
+}
+
+button.post {
+    border: none; 
+    outline: none; 
+}
+
+.pie {
+    display: flex;
+    text-align: left;
+}
